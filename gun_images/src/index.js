@@ -6,7 +6,8 @@ function setDetails(anchor) {
     detailsImage.setAttribute('src', anchor.getAttribute('data-details-image'));
     detailsTitle.innerHTML = anchor.getAttribute('data-details-title');
 }
-for (let i = 0; i < anchors.length; i++) {
+for (let i = 0; i < anchors.length; i++) 
+{
     anchors[i].addEventListener("click", function () {
         console.log("event - click on ", anchors[i]);
         setDetails(anchors[i]);
